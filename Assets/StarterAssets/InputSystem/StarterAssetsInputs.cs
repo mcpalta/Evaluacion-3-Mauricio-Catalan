@@ -20,6 +20,8 @@ namespace StarterAssets
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
 
+		public bool breakdoor;
+
 #if ENABLE_INPUT_SYSTEM
 		public void OnMove(InputValue value)
 		{
@@ -43,10 +45,11 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
+        public void OnBreakDoor(InputValue value) => breakdoor = value.isPressed;
 #endif
 
 
-		public void MoveInput(Vector2 newMoveDirection)
+        public void MoveInput(Vector2 newMoveDirection)
 		{
 			move = newMoveDirection;
 		} 

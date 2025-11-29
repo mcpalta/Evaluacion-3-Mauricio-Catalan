@@ -159,6 +159,11 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+            float velocidadActual = new Vector3(_controller.velocity.x, 0, _controller.velocity.z).magnitude;
+
+            // Asignar velocidad al Animator
+            _animator.SetFloat("Speed", velocidadActual);
+
         }
 
         private void LateUpdate()
