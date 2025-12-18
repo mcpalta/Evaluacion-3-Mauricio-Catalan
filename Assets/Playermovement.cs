@@ -23,16 +23,6 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isRunning", false);
         }
 
-        if (inputs.breakdoor == false)
-        {
-            animator.SetTrigger("Idle");
-            animator.ResetTrigger("BreakDoor");
-        }
-        else
-        {
-            animator.SetTrigger("BreakDoor");
-            animator.ResetTrigger("Idles");
-        }
     }
 }
 

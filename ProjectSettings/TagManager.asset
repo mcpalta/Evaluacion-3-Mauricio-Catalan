@@ -7,11 +7,12 @@ TagManager:
   - CinemachineTarget
   - ObstaculoDanio
   - Gema
+  - dummy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
